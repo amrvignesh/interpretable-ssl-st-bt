@@ -1,4 +1,4 @@
-# Interpretable Semi-Supervised Swin Transformer for Brain Tumor Segmentation
+# Interpretable Semi-Supervised Swin UNETR for Brain Tumor Segmentation
 
 [![GitHub repo](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/amrvignesh/interpretable-ssl-st-bt)
 ## Overview
