@@ -64,6 +64,20 @@ python brats_ssl_train.py \
 ```
 Checkpoints (model_best.pt, model_latest.pt) and training history (training_history.json, training_history.png) will be saved in the --output_dir.3. Demonstration and VisualizationRun the brats_ssl_demo_notebook.ipynb notebook:It loads the best trained model (model_best.pt).Performs inference on a sample case.Visualizes the input MRI, ground truth segmentation, and model prediction.Includes a placeholder section for visualizing Attention Rollout maps (requires implementation).Summarizes quantitative results from the training history.
 
+### 3. Inference
+```
+python inference.py \
+    --model_path ./output_brats_ssl_amp/model_best.pt \
+    --data_dir /home/users/vraja/dl/data/brats2021challenge \
+    --structure_csv brats_dsc.csv \
+    --output_dir ./output_inference_results \
+    --roi_size 128 128 128 \
+    --sw_batch_size 4 \
+    --infer_overlap 0.6
+    # Optional: Add --case_ids ID1 ID2 ... to process only specific cases
+    # Optional: Add --save_probs to attempt saving probability maps (currently logs warning)
+```
+
 ### File Structure (Key Files)interpretable-ssl-st-bt/
 ```
 │
