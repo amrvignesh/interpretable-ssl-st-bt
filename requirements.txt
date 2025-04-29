@@ -1,0 +1,24 @@
+# This file lists the Python packages required to run the project.
+# Install them using: pip install -r requirements.txt
+
+# Core ML/DL and Data Handling
+torch
+pandas
+numpy
+monai-weekly[nibabel] # Includes monai and nibabel
+
+# Plotting
+matplotlib
+
+# Synapse interaction
+synapseclient
+
+# Opentelemetry (as per installation commands)
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-http
+opentelemetry-instrumentation
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-requests
+opentelemetry-instrumentation-threading
+opentelemetry-instrumentation-httpx
