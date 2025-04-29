@@ -1,14 +1,33 @@
-# This file lists the Python packages required to run the project.
+# This file lists the Python packages required to run the scripts.
 # Install them using: pip install -r requirements.txt
 
 # Core ML/DL and Data Handling
 torch
+torchvision
 pandas
 numpy
 monai-weekly[nibabel] # Includes monai and nibabel
 
+# Scientific Computing & Image Processing
+scipy==1.10.1
+scikit-image
+itk
+pynrrd
+
 # Plotting
 matplotlib
+
+# ML/DL Utilities & Frameworks
+pytorch-ignite
+tensorboard
+einops
+transformers
+mlflow
+clearml
+
+# Data/File Handling Utilities
+lmdb
+gdown
 
 # Synapse interaction
 synapseclient
@@ -22,3 +41,11 @@ opentelemetry-instrumentation-flask
 opentelemetry-instrumentation-requests
 opentelemetry-instrumentation-threading
 opentelemetry-instrumentation-httpx
+
+# Testing & System Utilities
+testresources
+psutil==5.9.8
+
+# Dependency Version Constraints (added from install commands)
+urllib3<2.0.0
+packaging<25.0
